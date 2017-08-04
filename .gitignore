@@ -1,3 +1,4 @@
 /node_modules
 .env
 /Facebook/config/auth.js
+/Google/config/auth.js

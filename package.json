@@ -4,7 +4,7 @@
   "description": "Starter templates for OAuth",
   "main": "index.js",
   "scripts": {
-    "start:google": "cd Google && nodemon Google/server.js",
+    "start:google": "cd Google && nodemon server.js",
     "start:facebook": "cd Facebook && nodemon server.js"
   },
   "author": "amatranga",
