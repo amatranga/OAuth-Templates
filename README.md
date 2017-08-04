@@ -9,7 +9,7 @@ Basic templates for OAuth. Currently supports:
 1. [Usage](#usage)
 2. [Requirements](#requirements)
 3. [Development](#development)
-  1. [Installing Dependencies](#installing-dependencies)
+  1. [Installing Dependencies](#installing-project-dependencies)
   2. [Starting your Environment](#starting-your-environment)
 
 ## Usage
