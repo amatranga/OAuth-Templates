@@ -1,6 +1,8 @@
 # OAuth Templates
 
-Basic templates for OAuth. Currently supports: -Facebook OAuth
+Basic templates for OAuth. Currently supports:
+
+- Facebook OAuth
 
 ##Table of Contents
 
@@ -10,19 +12,19 @@ Basic templates for OAuth. Currently supports: -Facebook OAuth
   1. [Installing Dependencies](#Installing-dependencies)
   2. [Starting your Environment](#Starting-your-Environment)
 
-##Usage
+## Usage
 
 OAuth-Templates is intended to provide a starting point for OAuth. 
 
 
-##Requirements
+## Requirements
 
 - Node 7.10.x
 - Mongo 3.4
 
-##Development
+## Development
 
-###Installing Project Dependencies
+### Installing Project Dependencies
 
 ```
 git clone https://github.com/amatranga/OAuth-Templates.git
@@ -30,7 +32,7 @@ cd OAuth-Templates
 npm install
 ```
 
-###Starting your Environment
+### Starting your Environment
 
 First, make sure MongoDB is running. From your terminal:
 
