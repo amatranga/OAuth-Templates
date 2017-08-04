@@ -6,11 +6,11 @@ Basic templates for OAuth. Currently supports:
 
 ##Table of Contents
 
-1. [Usage](#Usage)
-2. [Requirements](#Requirements)
-3. [Development](#Development)
-  1. [Installing Dependencies](#Installing-dependencies)
-  2. [Starting your Environment](#Starting-your-Environment)
+1. [Usage](#usage)
+2. [Requirements](#requirements)
+3. [Development](#development)
+  1. [Installing Dependencies](#installing-dependencies)
+  2. [Starting your Environment](#starting-your-environment)
 
 ## Usage
 
