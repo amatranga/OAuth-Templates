@@ -15,7 +15,7 @@ module.exports = (app, passport) => {
 
   //route for Google authentication and login
   app.get('/auth/google', passport.authenticate('google', {
-    scope: ['email', 'profile']
+    scope: ['profile', 'email']
   }));
 
   app.get('/auth/google/callback',

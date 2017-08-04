@@ -5,6 +5,7 @@ const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const session = require('express-session');
+const passport = require('passport');
 const flash = require('connect-flash');
 const mongoose = require('mongoose');
 
@@ -12,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 const dbConfig = require('./config/database.js');
 
 //configuration
-moongose.connect(dbConfig.url);
+mongoose.connect(dbConfig.url);
 
 //set up express server
 app.use(morgan('dev'));  //all requests will now be logged to the server

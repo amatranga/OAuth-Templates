@@ -22,13 +22,7 @@ passport.use('google', new GoogleStrategy({
 (token, refreshToken, profile, done) => {
   process.nextTick(() => {
     //look for the user in the database based on their google id
-    User.findOne({
-      'google.id': profile.id,
-      'google.firstName': profile.name.givenName,
-      'google.lastName': profile.name.familyName,
-      'google.email': profile.email,
-      'google.token': profile.token
-    }, (err, user) => {
+    User.findOne({ 'google.id': profile.id }, (err, user) => {
       //if there is an error, immediately stop and return the error
       //an error here is most likely to be an error connecting to the database
       if (err) {
@@ -44,7 +38,7 @@ passport.use('google', new GoogleStrategy({
         //set all of the Google info in the user model
         newUser.google.id = profile.id;  //sets the users google id
         newUser.token = token  //saves the token that google provides the user
-        newUser.google.name = `${profile.name.givenName} ${profile.name.familyName}`;  //sets the users name
+        newUser.google.name = profile.displayName;  //sets the users name
         newUser.google.email = profile.emails[0].value;
         //Now that we have a user object, we will save it to the database
         newUser.save((err) => {

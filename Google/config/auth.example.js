@@ -5,3 +5,5 @@ module.exports = {
     'GOOGLE_CALLBACKURL' : YOUR_GOOGLE_CALLBACKURL
   }
 };
+
+//Google credentials can be found at console.developers.google.com
