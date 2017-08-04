@@ -27,8 +27,10 @@ OAuth-Templates is intended to provide a starting point for OAuth.
 
 ### Installing Project Dependencies
 
+After forking the repo...
+
 ```
-git clone https://github.com/amatranga/OAuth-Templates.git
+git clone https://github.com/[YOUR_GITHUB_HANDLE]/OAuth-Templates.git
 cd OAuth-Templates
 npm install
 ```
