@@ -4,7 +4,7 @@ Basic templates for OAuth. Currently supports:
 
 - Facebook OAuth
 
-##Table of Contents
+## Table of Contents
 
 1. [Usage](#usage)
 2. [Requirements](#requirements)
@@ -48,7 +48,7 @@ done that, in your terminal, from the root of your OAuth-Template directory:
 npm start:<OAuth_provider>
 ```
 
-Note that on Windows, you may have to run
+*Note* Windows users may have to run:
 
 ```
 npm run start:<OAuth_provider>
