@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 const userSchema = mongoose.Schema({
   linkedin: {
     id: String,
-    token: String,
+    name: String,
     email: String,
-    name: String
+    headline: String
   }
 });
 

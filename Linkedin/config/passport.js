@@ -15,17 +15,17 @@ passport.deserializeUser((id, done) => {
 });
 
 passport.use('linkedin', new LinkedinStrategy({
-  clientId: auth.linkedinAuth.LINKEDIN_CLIENT_ID,
-  clientSecret: auth.linkedinAuth.LINKEDIN_CLIENT_SECRET,
+  consumerKey: auth.linkedinAuth.LINKEDIN_API_KEY,
+  consumerSecret: auth.linkedinAuth.LINKEDIN_SECRET_KEY,
   callbackURL: auth.linkedinAuth.LINKEDIN_CALLBACKURL,
-  profileFields: ['id', 'first-name', 'last-name', 'email-address', 'headline']
+  profileFields: auth.linkedinAuth.LINKEDIN_SCOPE
 }, 
   (token, refreshToken, profile, done) => {
     User.findOne({
       'linkedin.id': profile.id,
       'linkedin.email': profile.email,
-      'linkedin.name': profile.email,
-      'linkedin.token': profile.token
+      'linkedin.name': profile.displayName,
+      'linkedin.headline': profile.headline
     }, (err, user) => {
       if (err) {
         return done(err);
@@ -35,9 +35,9 @@ passport.use('linkedin', new LinkedinStrategy({
       } else {
         const newUser = new User();
         newUser.linkedin.id = profile.id;
+        newUser.linkedin.name = profile.displayName;
         newUser.linkedin.email = profile.emails[0].value;
-        newUser.linkedin.name = profile.name;
-        newUser.linkedin.token = profile.token;
+        newUser.linkedin.headline = profile._json.headline;
 
         newUser.save((err) => {
           if (err) {
