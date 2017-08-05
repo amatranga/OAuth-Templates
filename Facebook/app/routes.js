@@ -6,7 +6,7 @@ module.exports = (app, passport) => {
   });
 
   //For any routes that require the user to be logged in, 
-  //call the isLoggedIn function before handling the req and res asdf
+  //call the isLoggedIn function before handling the req and res
   app.get('/profile', isLoggedIn, (req, res) => {
     res.render('profile.ejs', {
       user: req.user  //we will get the user from the session
