@@ -4,6 +4,7 @@ Basic templates for OAuth. Currently supports:
 
 - Facebook OAuth
 - Google OAuth
+- GitHub OAuth
 
 ## Table of Contents
 
