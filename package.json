@@ -4,6 +4,7 @@
   "description": "Starter templates for OAuth",
   "main": "index.js",
   "scripts": {
+    "start:github": "cd Github && nodemon server.js",
     "start:google": "cd Google && nodemon server.js",
     "start:facebook": "cd Facebook && nodemon server.js"
   },
@@ -25,6 +26,7 @@
     "nodemon": "^1.11.0",
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.1",
+    "passport-github2": "^0.1.10",
     "passport-google-oauth": "^1.0.0"
   }
 }

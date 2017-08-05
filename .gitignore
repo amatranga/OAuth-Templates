@@ -2,3 +2,4 @@
 .env
 /Facebook/config/auth.js
 /Google/config/auth.js
+/Github/config/auth.js
