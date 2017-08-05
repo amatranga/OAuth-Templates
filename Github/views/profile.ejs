@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Github Authentication</title>
+    <title>Google Authentication</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
     <style>
@@ -9,18 +9,17 @@
   </head>
   <body>
     <div class="container">
-      <div class="page-header jumbotron">
+      <div class="page-header jumbotron text-center">
         <div class="well">
           <h3>
             <span class="fa fa-user"></span> Github
           </h3>
           <p>
-            <strong>name</strong>: <%= user.google.name %><br>
-            <strong>email</strong>: <%= user.google.email %><br>
-            <strong>id</strong>: <%= user.google.id %><br>
-            <strong>token</strong>: You CAN access this through 'user.google.token', but you really shouldn't<br>
+            <strong>name</strong>: <%= user.github.name %><br>
+            <strong>username</strong>: <%= user.github.username %><br>
+            <strong>id</strong>: <%= user.github.id %><br>
           </p>
-          <a href="/logout" class="btn btn-danger">Logout</a>
+          <a href="/logout" class="btn">Logout</a>
         </div>
       </div>
     </div>
