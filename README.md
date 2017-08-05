@@ -46,7 +46,7 @@ cd /path/to/your/MongoDB
 Mongod.exe
 ```
 
-Now, rename auth.example.js to auth.js, and add in your keys. Once you have
+Now, within the strategy folder you want to use, rename auth.example.js to auth.js, and add in your keys. Once you have
 done that, in your terminal, from the root of your OAuth-Template directory:
 
 ```
