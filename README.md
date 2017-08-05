@@ -59,4 +59,4 @@ npm start:<OAuth_provider>
 npm run start:<OAuth_provider>
 ```
 
-OAuth-Templates launches on port 3000 by default.
+The example will run at [127.0.0.1:3000](http://http://127.0.0.1:3000/) 
