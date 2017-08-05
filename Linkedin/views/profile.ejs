@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>LinkedIn Authentication</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <style>
+      body { padding-top: 80px; word-wrap: break-word; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header jumbotron text-center">
+        <div class="well">
+          <h3>
+            <span class="fa fa-user"></span> LinkedIn 
+          </h3>
+          <p>
+            <strong>name</strong>: <%= user.linkedin.name %><br>
+            <strong>email</strong>: <%= user.linkedin.email %><br>
+            <strong>id</strong>: <%= user.linkedin.id %><br>
+            <strong>headline</strong>: <%= user.linkedin.headline %><br>
+            <strong>token</strong>: You CAN access this through 'user.linkedin.token', but you really shouldn't<br>
+          </p>
+          <a href="/logout" class="btn btn-default">Logout</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -6,7 +6,8 @@
   "scripts": {
     "start:github": "cd Github && nodemon server.js",
     "start:google": "cd Google && nodemon server.js",
-    "start:facebook": "cd Facebook && nodemon server.js"
+    "start:facebook": "cd Facebook && nodemon server.js",
+    "start:linkedin": "cd Linkedin && nodemon server.js"
   },
   "author": "amatranga",
   "license": "ISC",
@@ -27,6 +28,7 @@
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.1",
     "passport-github2": "^0.1.10",
-    "passport-google-oauth": "^1.0.0"
+    "passport-google-oauth": "^1.0.0",
+    "passport-linkedin": "^1.0.0"
   }
 }
