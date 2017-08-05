@@ -6,7 +6,8 @@
   "scripts": {
     "start:github": "cd Github && nodemon server.js",
     "start:google": "cd Google && nodemon server.js",
-    "start:facebook": "cd Facebook && nodemon server.js"
+    "start:facebook": "cd Facebook && nodemon server.js",
+    "start:linkedin": "cd Linkedin && nodemon server.js"
   },
   "author": "amatranga",
   "license": "ISC",
